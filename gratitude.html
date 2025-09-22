@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            @font-face {
+             font-family: myFont;
+             src: url(sansation_light.woff);
+            }
+
+* {
+   font-family: myFont;
+}
+            body{
+                background:radial-gradient(circle,black); 
+                background-repeat: no-repeat;
+                /* background-position: center; */
+                background-attachment: fixed;
+                background-size:cover; 
+                color: aliceblue; 
+                text-align:center ;
+                margin-top:2cm;
+            } 
+            button{ 
+                /* color:white; */
+                margin-top:2cm;
+                height:70px;
+                width:200px;
+                border-radius: 25px;
+                border:none;
+                padding:1em 2em;
+                cursor: pointer;
+                transition: all 500ms ease;
+                box-shadow: 0 0 5px cyan,
+                            0 0 25px cyan,
+                            0 0 50px cyan,
+                            0 0 100px cyan,
+                            0 0 150px cyan,
+                            0 0 200px cyan;
+
+                font-family:'Times New Roman';
+                font-size:larger;
+                font-style: oblique; 
+                font-weight:bold;   
+                background: linear-gradient(180deg,white 78%,rgb(7, 156, 156) 100%);
+            }
+            /* #7E5936 */
+            button:hover{
+                background: linear-gradient(180deg,rgb(17, 31, 52) 78%,white 100%);
+                color:white; 
+                box-shadow: 0 0 5px white,
+                            0 0 25px white,
+                            0 0 50px white, 
+                            0 0 100px white,
+                            0 0 150px white,
+                            0 0 200px white;
+            }
+            h2{
+                background:linear-gradient(37deg,blue,cyan);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3{
+                background:linear-gradient(37deg,cyan,blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        </style> 
+    </head>
+    <body>
+        <div id="btn"><h2 class="btn"> HELLO World changers</h2>
+        <h3 class="btn">Click the button</h3><span style="font-size: 0.8cm;">🌹💝🎁</span><br>
+        <button onclick=ks()> Click me!..<br> 🐦 </button> </div>
+        <div id="format"></div>
+    <script> 
+        function ks(){ 
+            var name=prompt("Please enter your name");
+            var k=name.toUpperCase();
+            document.getElementById("btn").style.display="none";
+            if(name){
+                const compli=[ 
+                    "⭐Your're truly an amazing classmate to have!", 
+                    "🌹You treat everyone with respect and kindness!",
+                    "😃You make the classroom more lively and fun!",
+                    "📚You set a good example for others!",
+                    "🌈Your positivity spreads to everyone around!",
+                    "🌟You have a kind and friendly nature!",
+                    "📖You're really smart and hardworking!",
+                    "🔥You never give up, no matter how hard things get!",
+                    "🤍You stay calm even in stressful times!"
+                ];
+                let compl=compli[Math.floor(Math.random()*compli.length)];
+                const tq=[
+                        "Thank you so much ❤️for taking the time to wish me. It truly meant a lot!!!",
+                        "Your birthday wish was the highlight of my day- THANK YOU❤️..",
+                        "No matter what birthday it is, I can always count-on my family & friends for birthday wishes.Thank you so much❤️...",
+                        "I just wanted to thank you ❤️ for your wishes. I feel lucky to have you as my friend!",
+                        "I just wanted to take a moment to say a huge thank you ❤️ to everyone who made my birthday so special.",
+                        "Feeling so lucky and grateful ❤️ to have such amazing people in my life to celebrate with.",
+                        "Guess you found out my secret: I'm getting older! Thanks for the wishes❤️..",
+                        "Thanks❤️ for making my day a little brighter💖",
+                        "Appreciate the reminder that I'm getting older,..Just kidding, thankyou so much❤️!"
+                ];
+                let thanks=tq[Math.floor(Math.random()*tq.length)];
+                // document.getElementById("a").innerHTML='<b> thanks + name +for your wishes!..<br> + compl</b>';
+                // document.write("<span style='color:blue; margin-left:2cm;'>"+thanks +"&nbsp;" + name+"🩶" +"<br>" + k +"</span>!"+ "&nbsp;"+ compl);
+                // document.getElementById("dif").style.display="block"; 
+                document.getElementById("format").innerHTML=
+                "<span style='color:white; margin:2cm; font-weight:bold;'>"+thanks +"&nbsp;" +k+"🩶" +"<br>"+"</span>"+"<p>One compliment for you!..</p>"+"<span style='color:cyan;font-weight:bold;'>"+"&nbsp;"+ compl+"</span>";
+            } 
+        }
+      
+    </script>
+<!-- 
+function format(){ 
+    var d1=document.getElementById("dif");
+    d1.style.backgroundColor="#003366"; 
+    }
+    var btn=document.getElementById("button1");        
+    btn.addEventListener("click",format); -->
+    </body>
+</html>
