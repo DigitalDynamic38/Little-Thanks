@@ -51,10 +51,12 @@
         </style> 
     </head>
     <body>
+        <div align="center">
         <div id="btn"><h2 class="btn"> HELLO World changers</h2>
         <h3 class="btn">Click the button</h3><span style="font-size: 0.8cm;">🌹💝🎁</span><br>
         <button onclick=ks()> Click me!..<br> 🐦 </button> </div>
         <div id="format"></div>
+        </div>
     <script> 
         function ks(){ 
             var name=prompt("Please enter your name");
@@ -89,17 +91,10 @@
                 // document.write("<span style='color:blue; margin-left:2cm;'>"+thanks +"&nbsp;" + name+"🩶" +"<br>" + k +"</span>!"+ "&nbsp;"+ compl);
                 // document.getElementById("dif").style.display="block"; 
                 document.getElementById("format").innerHTML=
-                "<span style='color:white; margin:2cm; font-weight:bold;'>"+thanks +"&nbsp;" +k+"🩶" +"<br>"+"</span>"+"<p>One compliment for you!..</p>"+"<span style='color:cyan;font-weight:bold;'>"+"&nbsp;"+ compl+"</span>";
+                "<span style='color:white; font-weight:bolder; font-size:23px;'>"+thanks +"&nbsp;" +k+"🩶" +"<br>"+"</span>"+"<p>One compliment for you!..</p>"+"<span style='color:cyan;font-weight:bold;'>"+"&nbsp;"+ compl+"</span>";
             } 
         }
       
     </script>
-<!-- 
-function format(){ 
-    var d1=document.getElementById("dif");
-    d1.style.backgroundColor="#003366"; 
-    }
-    var btn=document.getElementById("button1");        
-    btn.addEventListener("click",format); -->
     </body>
 </html>
